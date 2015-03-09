@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    OpenERP, Open Source Management Solution
-#    This module copyright (C) 2013-2015 Therp BV (<http://therp.nl>).
+#    Author: Leonardo Donelli @ Creativi Quadrati
+#    Copyright (C) 2014 Leonardo Donelli <learts92@gmail.com>
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,14 +18,17 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
+
 {
-    "name": "Window actions for client side paging",
-    "summary": ("Allows a developer to trigger a pager to show the previous "
-                "or next next record in the form view"),
-    "version": "1.0",
-    "author": "Therp BV,Odoo Community Association (OCA)",
-    "category": "Dependency",
-    "depends": ['web'],
-    'data': ['view/qweb.xml'],
+    'name': 'Better Charts',
+    'version': '0.1',
+    'category': 'Web',
+    'summary': 'Improves graph views.',
+    'author': "Leonardo Donelli,Odoo Community Association (OCA)",
+    'license': 'AGPL-3',
+    'website': 'http://learts.glaucus.in',
+    'depends': ['web_graph'],
+    'data': ['view/graph_improved_view.xml'],
     'installable': True,
+    'auto_install': False,
 }
