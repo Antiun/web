@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 ##############################################################################
 #
-#    Author: Guewen Baconnier
-#    Copyright 2012 Camptocamp SA
+#    Author: Damien Crier
+#    Copyright 2015 Camptocamp SA
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,28 +18,19 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-
-{"name": "Web Translate Dialog",
- "category": "Hidden",
- "description": """
-Replace the standard translation view by an alternative one:
-
- * Add a "Translate" button item in the "More" menu
- * The translations are displayed in a dialog (much like the OpenERP
-   6.1's one)
- * Support HTML fields
- * Autosize the textareas to the size of the content
-
-""",
- "version": "1.0",
- "depends": ['web',
-             ],
- 'js': ['static/src/js/web_translate_dialog.js',
-        ],
- 'css': ['static/src/css/base.css',
-         ],
- 'qweb': ["static/src/xml/base.xml",
-          ],
- 'auto_install': False,
- 'installable': False,
- }
+{
+    'name': 'web tree dynamic colored field',
+    'category': 'Hidden',
+    'version': '1.0',
+    'depends': ['web'],
+    'author': "Camptocamp,Odoo Community Association (OCA)",
+    'license': 'AGPL-3',
+    'website': 'http://www.camptocamp.com',
+    'data': [
+        'views/web_tree_dynamic_colored_field.xml',
+    ],
+    'qweb': [
+        'static/xml/*.xml',
+    ],
+    'auto_install': False
+}
